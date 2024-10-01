@@ -1,2 +1,3 @@
 # HE-THONG-PHONG-KHONG-KHONG-QUAN
 HỆ THỐNG PHÁT HÀNH MỞ - KỸ THUẬT PK - DO KỸ SƯ QUÂN SỰ IEAGLESG PHÁT TRIỂN
+pip install qiskit
