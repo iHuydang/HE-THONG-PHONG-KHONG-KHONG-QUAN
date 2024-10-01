@@ -18,3 +18,21 @@ qaoa = QAOA(optimizer=COBYLA(), reps=1)
 backend = Aer.get_backend('aer_simulator')
 result = qaoa.compute_minimum_eigenvalue(problem.to_ising())
 print("Kết quả tối ưu hóa đường bay:", result)
+
+
+from qiskit import Aer
+from qiskit_machine_learning.algorithms import QSVC
+from qiskit_machine_learning.datasets import ad_hoc_data
+
+# Tạo dữ liệu mẫu
+training_features, training_labels, test_features, test_labels = ad_hoc_data(training_size=20, test_size=10, n=2, gap=0.3)
+
+# Khởi tạo QSVC (Quantum Support Vector Classifier)
+qsvc = QSVC(quantum_instance=Aer.get_backend('aer_simulator'))
+
+# Huấn luyện mô hình
+qsvc.fit(training_features, training_labels)
+
+# Dự đoán kết quả
+predictions = qsvc.predict(test_features)
+print("Kết quả dự đoán:", predictions)
