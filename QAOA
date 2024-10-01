@@ -1,0 +1,20 @@
+from qiskit import Aer, QuantumCircuit, execute
+from qiskit.algorithms import QAOA
+from qiskit.algorithms.optimizers import COBYLA
+from qiskit_optimization import QuadraticProgram
+
+# Khởi tạo bài toán tối ưu hóa cho đường bay
+problem = QuadraticProgram()
+
+# Giả sử có 2 thông số cần tối ưu: góc đánh chặn và tốc độ
+problem.binary_var('angle')
+problem.binary_var('speed')
+
+# Hàm mục tiêu mô phỏng tối ưu hóa quỹ đạo
+problem.minimize(linear=[-1, 2])
+
+# Dùng QAOA để giải quyết bài toán tối ưu hóa
+qaoa = QAOA(optimizer=COBYLA(), reps=1)
+backend = Aer.get_backend('aer_simulator')
+result = qaoa.compute_minimum_eigenvalue(problem.to_ising())
+print("Kết quả tối ưu hóa đường bay:", result)
