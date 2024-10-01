@@ -1,0 +1,126 @@
+{
+  "appenige": {
+    "systemInfo": {
+      "systemID": "APPENIGE-001",
+      "version": "1.0.0",
+      "releaseDate": "2024-10-01",
+      "headquarters": {
+        "location": "Classified",
+        "country": "Sài Gòn"
+      },
+      "author": "iHuydang"
+    },
+    "operations": [
+      {
+        "operationID": "OP-001",
+        "name": "iEagleSG Eye",
+        "objective": "Surveillance of enemy assets",
+        "status": "Ongoing",
+        "missionType": "Reconnaissance",
+        "priority": "High",
+        "assignedPersonnel": [
+          {
+            "personnelID": "P-001",
+            "name": "Agent John Doe",
+            "role": "Field Operative",
+            "securityClearance": "Top Secret"
+          },
+          {
+            "personnelID": "P-002",
+            "name": "Agent Jane Smith",
+            "role": "Mission Commander",
+            "securityClearance": "Top Secret"
+          }
+        ],
+        "resources": {
+          "satellites": [
+            {
+              "satelliteID": "SAT-001",
+              "type": "Reconnaissance",
+              "status": "Active",
+              "location": "Geosynchronous Orbit"
+            }
+          ],
+          "drones": [
+            {
+              "droneID": "DR-001",
+              "type": "Surveillance UAV",
+              "status": "Deployed",
+              "location": "Classified"
+            }
+          ],
+          "groundForces": [
+            {
+              "unitID": "GF-001",
+              "unitType": "Special Forces",
+              "personnelCount": 15,
+              "deploymentZone": "Classified"
+            }
+          ]
+        },
+        "timeline": {
+          "startDate": "2024-09-15",
+          "endDate": "Ongoing"
+        }
+      },
+      {
+        "operationID": "OP-002",
+        "name": "Silent Thunder",
+        "objective": "Neutralization of enemy communication hubs",
+        "status": "Planned",
+        "missionType": "Cyber Warfare",
+        "priority": "Critical",
+        "assignedPersonnel": [
+          {
+            "personnelID": "P-003",
+            "name": "Agent Alan White",
+            "role": "Cybersecurity Specialist",
+            "securityClearance": "Top Secret"
+          }
+        ],
+        "resources": {
+          "cyberTools": [
+            {
+              "toolID": "CT-001",
+              "name": "Offensive Penetration Suite",
+              "type": "Malware",
+              "status": "Ready"
+            }
+          ]
+        },
+        "timeline": {
+          "startDate": "2024-10-10",
+          "endDate": "TBD"
+        }
+      }
+    ],
+    "securityMeasures": {
+      "cyberDefense": {
+        "firewall": "AES-256",
+        "intrusionDetection": "Advanced Threat Protection",
+        "encryptionProtocol": "RSA-4096"
+      },
+      "physicalSecurity": {
+        "personnel": 2000,
+        "surveillance": "24/7 CCTV with IEag Monitoring",
+        "accessControl": "Biometric & RFID"
+      }
+    },
+    "maintenanceSchedule": {
+      "lastCheck": "2024-09-30",
+      "nextCheck": "2024-12-30",
+      "teams": [
+        {
+          "teamID": "Team-Alpha",
+          "scope": "Cyber Defense",
+          "status": "Completed"
+        },
+        {
+          "teamID": "Team-Bravo",
+          "scope": "Drone Fleet",
+          "status": "Scheduled"
+        }
+      ]
+    }
+  }
+}
